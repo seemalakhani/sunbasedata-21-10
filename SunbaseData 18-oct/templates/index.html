@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Prediction</title>
+</head>
+<body>
+    <h1>Churn Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" required><br><br>
+        
+        <label for="Location">Location:</label>
+        <input type="text" id="Location" name="Location" required><br><br>
+        
+        <label for="Gender">Gender:</label>
+        <input type="text" id="Gender" name="Gender" required><br><br>
+        
+        <label for="Monthly_Bill">Monthly Bill:</label>
+        <input type="number" id="Monthly_Bill" name="Monthly_Bill" required><br><br>
+        
+        <label for="Total_Usage_GB">Total Usage (in GB):</label>
+        <input type="number" id="Total_Usage_GB" name="Total_Usage_GB" required><br><br>
+        
+        <label for="Subscription_Length_Months">Subscription Length (in Months):</label>
+        <input type="number" id="Subscription_Length_Months" name="Subscription_Length_Months" required><br><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
